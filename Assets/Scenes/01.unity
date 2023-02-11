@@ -20403,7 +20403,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isGlobal: 1
-  priority: 0
+  priority: 0.5
   blendDistance: 0
   weight: 1
   sharedProfile: {fileID: 11400000, guid: 93aa9354fd2bb2d4f8994384d7e1b178, type: 2}
@@ -29563,7 +29563,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6201297670679193885, guid: 94e47bb1fd635cc46a65ea8445d3e6d6, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.19
+      value: -1.03
       objectReference: {fileID: 0}
     - target: {fileID: 6201297670679193885, guid: 94e47bb1fd635cc46a65ea8445d3e6d6, type: 3}
       propertyPath: m_LocalPosition.y
@@ -29571,7 +29571,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6201297670679193885, guid: 94e47bb1fd635cc46a65ea8445d3e6d6, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -7.03
+      value: -3.05
       objectReference: {fileID: 0}
     - target: {fileID: 6201297670679193885, guid: 94e47bb1fd635cc46a65ea8445d3e6d6, type: 3}
       propertyPath: m_LocalRotation.w
