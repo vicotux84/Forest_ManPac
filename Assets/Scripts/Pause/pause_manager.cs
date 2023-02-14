@@ -27,7 +27,7 @@ public class pause_manager : MonoBehaviour {
 	
     
 	#region quality	
-	public void Set_Quality(int Level){
+	public void Set_antiAliasing(int Level){
 		QualitySettings.antiAliasing = Level;
 	}
 	public void Get_Quality (int Level){
