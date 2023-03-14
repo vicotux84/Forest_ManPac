@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 3424088874807035023}
   - component: {fileID: 3348192473080200745}
   - component: {fileID: 561636810907387919}
+  - component: {fileID: 1735897695996977978}
   m_Layer: 0
   m_Name: Ogro01v
   m_TagString: Untagged
@@ -108,6 +109,7 @@ MonoBehaviour:
   _Coin: {fileID: 8300000, guid: 5493274fbce7e584bbcb35fe311e572b, type: 3}
   _Dead: {fileID: 8300000, guid: 0c1e922fba019324a95523906d1afc7a, type: 3}
   RB: {fileID: 3348192473080200745}
+  _Sound: 0
 --- !u!54 &3348192473080200745
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -146,6 +148,18 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!114 &1735897695996977978
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8476483290677630705}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d6bb0c92c6befb248976fdc5f811ba16, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1006582370039475320
 PrefabInstance:
   m_ObjectHideFlags: 0

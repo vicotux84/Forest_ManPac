@@ -532,9 +532,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a08686a6827d944196f40f405ec06f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _Agent: {fileID: 0}
   MinDist: {fileID: 0}
-  MaxDist: {fileID: 0}
-  Speed: 4
+  moveTo: {x: 0, y: 0, z: 0}
 --- !u!114 &5166382347283347037
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -550,14 +550,15 @@ MonoBehaviour:
   TagPlayer: Jugador
   Value: 50
   IsCoin: 0
+  Orco: {fileID: 0}
   anim: {fileID: 4629448850015511779}
   ScriptIA: {fileID: 7150695356141739056}
   IsDead: 0
   ColiderEnemy: {fileID: 2913059893254194134}
-  audioSource: {fileID: 5871547710000627024}
   _Coin: {fileID: 8300000, guid: 5493274fbce7e584bbcb35fe311e572b, type: 3}
   _Dead: {fileID: 8300000, guid: 0c1e922fba019324a95523906d1afc7a, type: 3}
-  GameManager: {fileID: 0}
+  RB: {fileID: 0}
+  _Sound: 0
 --- !u!82 &5871547710000627024
 AudioSource:
   m_ObjectHideFlags: 0

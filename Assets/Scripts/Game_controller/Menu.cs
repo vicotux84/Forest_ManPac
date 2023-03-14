@@ -20,6 +20,10 @@ public class Menu : MonoBehaviour
         Application.Quit();
 		#endif
 		}
+
+		private void Update() {
+			cursortrue();
+		}
 		
 	public void cursorF(){
 		Application.OpenURL("http://www.youtube.com/eltuga24");
