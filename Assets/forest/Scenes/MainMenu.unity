@@ -1149,8 +1149,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 195.3262, y: -25.000006}
-  m_SizeDelta: {x: 290, y: 50}
+  m_AnchoredPosition: {x: 195.3262, y: -25.000008}
+  m_SizeDelta: {x: 439.5374, y: 50}
   m_Pivot: {x: 0.5, y: 0.49999988}
 --- !u!114 &1396941713
 MonoBehaviour:
@@ -1234,14 +1234,14 @@ MonoBehaviour:
     m_FontStyle: 1
     m_BestFit: 1
     m_MinSize: 10
-    m_MaxSize: 65
+    m_MaxSize: 60
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: Fps game
+  m_Text: New mode game
 --- !u!222 &1396941715
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1317,8 +1317,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 187.67155, y: -137.5471}
-  m_SizeDelta: {x: 375.4919, y: 50}
+  m_AnchoredPosition: {x: 186.1761, y: -137.5471}
+  m_SizeDelta: {x: 448.8499, y: 50}
   m_Pivot: {x: 0.47961435, y: 0.49999988}
 --- !u!114 &1576948744
 MonoBehaviour:
@@ -1373,7 +1373,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 01_TPS
+          m_StringArgument: 01
           m_BoolArgument: 0
         m_CallState: 1
 --- !u!114 &1576948745
@@ -1402,14 +1402,14 @@ MonoBehaviour:
     m_FontStyle: 1
     m_BestFit: 1
     m_MinSize: 10
-    m_MaxSize: 76
+    m_MaxSize: 61
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: Tps game
+  m_Text: Classic mode
 --- !u!222 &1576948746
 CanvasRenderer:
   m_ObjectHideFlags: 0
