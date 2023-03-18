@@ -20,9 +20,11 @@ public class GameManager : MonoBehaviour{
     public float Musicvol,SFXvol;
     [SerializeField] SoundFXManagerv FXManager;
 
-    [SerializeField] GameObject Player;
-    [SerializeField] GameObject []PrefabPlayer;
-    int prefabPlayer=0;
+    [SerializeField] GameObject Player, Player1,Player2;
+    [SerializeField] Vector3 position;
+    public float espera_Reespawn;
+    [SerializeField] GameObject NewPlayer,OldPlayer;
+    //int prefabPlayer=0;
     [SerializeField]  string Tag_Seguir="player";
 
     public static int HighScore;
@@ -62,7 +64,7 @@ public class GameManager : MonoBehaviour{
 
 #region metodos extras
 
-    public void StartGame(){
+  public void StartGame(){
         currentGameState=GameState.inGame;
         Time.timeScale = 1;
     }
@@ -98,8 +100,7 @@ public class GameManager : MonoBehaviour{
     public void UpdateSound() {
         _Musicvol=Musicvol;        
         _SFXvol=SFXvol;
-         Debug.Log(_SFXvol);
-         Debug.Log(_Musicvol);
+        
          }
 
 
@@ -113,37 +114,41 @@ public class GameManager : MonoBehaviour{
     }
     void NextLive(){    
         Time.timeScale = 1;
+         Player.transform.position=position;
+         Player.SetActive(true);  
     }
     void livesCount(){
         if(lives==0){
             GameOver(MainMenu);
+           
         }        
     }
     void HeartsCount(){
         if(Hearts<=0){
             FXManager.SoundPlay(Dead, 3);
-            Destroy(Player);
-            lives-=1;
-            Hearts=100;
-            Instantiate(PrefabPlayer[prefabPlayer]);
-            prefabPlayer++;
-            
+            Player.SetActive(false);            
+            lives--;
+            Hearts=100;           
            Time.timeScale = 0;
-            Invoke("NextLive", 10f);
+            Invoke("NextLive", espera_Reespawn);
         }
     }
     void UpdateInts(){
         Life=lives;
-        Healt=Hearts;
-        
-        
+        Healt=Hearts;        
         Colectables=Coins;
+    }
+    public void PlayerChoise(int value) {
+        if(value==1){
+            Instantiate(Player1,position,Quaternion.identity);
+        }
+        if (value==2){
+            Instantiate(Player2,position,Quaternion.identity);
+    }
     }
 
     void SearchManagers() {
-        if(prefabPlayer>=5){
-            prefabPlayer=0;
-        }
+        
         if(FXManager==null){
         FXManager=FindObjectOfType<SoundFXManagerv>();
         }
