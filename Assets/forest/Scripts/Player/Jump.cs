@@ -17,9 +17,7 @@ public class Jump : MonoBehaviour{
     }
     void Update() {
         Jumping();
-        if (controller.isGrounded) {
-            Debug.Log("puedes saltar");
-            } 
+     
      }   
         
      void Jumping() {
