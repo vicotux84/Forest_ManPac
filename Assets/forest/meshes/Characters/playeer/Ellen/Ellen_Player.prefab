@@ -929,8 +929,7 @@ GameObject:
   - component: {fileID: 2762793041146451685}
   - component: {fileID: 2815331047571810769}
   - component: {fileID: 2674063202098493158}
-  - component: {fileID: 7495657108832068290}
-  - component: {fileID: 7931078103549642976}
+  - component: {fileID: 1464861315}
   m_Layer: 0
   m_Name: Ellen_Player
   m_TagString: Jugador
@@ -963,7 +962,7 @@ Animator:
   m_GameObject: {fileID: 2756266542754115645}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: 717b81375fa2e1540a80271f3b040157, type: 3}
-  m_Controller: {fileID: 9100000, guid: a84220027b3810d4192db461ebf75f8c, type: 2}
+  m_Controller: {fileID: 9100000, guid: c7998cd1c45edc64f8f3b7907d284cf3, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -990,7 +989,7 @@ CharacterController:
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
   m_Center: {x: 0.01, y: 0.83, z: -0.29}
---- !u!114 &7495657108832068290
+--- !u!114 &1464861315
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -999,36 +998,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 2756266542754115645}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5c7e30e1f0ec887488edb03bb035fd1c, type: 3}
+  m_Script: {fileID: 11500000, guid: b8ca301685171e64c8b97f4acca1b7d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  FXManager: {fileID: 0}
-  MeshPlayer: {fileID: 2762793041146451685}
-  Speed: 8
-  SpeedRun: 14
-  Is_SideScroll: 1
-  Foot: {fileID: 8300000, guid: e5bbdf6f42e531f4c9710cf2e9bf178e, type: 3}
   CursorIsvisble: 1
   Horizontal: Horizontal
   Vertical: Vertical
-  Run: Fire1
-  _Sound: 1
---- !u!114 &7931078103549642976
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2756266542754115645}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c4183ecdd73f28b43a8cbc55c11aac1f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  jumpSpeed: 0
-  gravity: 100
-  JumpButton: Fire1
-  _anim: {fileID: 2815331047571810769}
+  Speed: 3.2
 --- !u!1 &2786669554084450254
 GameObject:
   m_ObjectHideFlags: 0
