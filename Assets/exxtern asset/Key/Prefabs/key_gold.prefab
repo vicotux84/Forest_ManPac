@@ -90,6 +90,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 462124}
+  - component: {fileID: 1442438464}
+  - component: {fileID: 165649486150500758}
+  - component: {fileID: 1555162836464579997}
   m_Layer: 0
   m_Name: key_gold
   m_TagString: Untagged
@@ -112,3 +115,48 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: -68.885, z: 0}
+--- !u!114 &1442438464
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 170560}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3656fa62cbbd0f7459fda7548c4552aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Rotation: {x: 0, y: 2.3, z: 0}
+--- !u!135 &165649486150500758
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 170560}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.8049981
+  m_Center: {x: 0, y: 0.94, z: 0.07637262}
+--- !u!114 &1555162836464579997
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 170560}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43cef209bbebe25eeb9efe78e9d5c6ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TagPlayer: Jugador
+  ColiderCoin: {fileID: 165649486150500758}
+  thisCoin: {fileID: 170560}
+  Points: 10
+  _Coin: {fileID: 8300000, guid: 6c3eaad2c6da79545807a2b0ba54b352, type: 3}
+  FXManager: {fileID: 0}
+  Sound: 0

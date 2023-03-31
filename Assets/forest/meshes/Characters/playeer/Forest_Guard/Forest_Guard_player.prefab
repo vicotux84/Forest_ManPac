@@ -893,7 +893,7 @@ GameObject:
   - component: {fileID: 4435839585051676171}
   - component: {fileID: 4435839585051676168}
   - component: {fileID: 4435839585051676169}
-  - component: {fileID: 4435839585051676166}
+  - component: {fileID: 6792224179556315018}
   m_Layer: 0
   m_Name: Forest_Guard_player
   m_TagString: Jugador
@@ -928,8 +928,8 @@ Animator:
   m_Avatar: {fileID: 9000000, guid: 854288dc537420f499743f440dc6e5f8, type: 3}
   m_Controller: {fileID: 9100000, guid: 1a9733300910cd04dbd103a97c3f4494, type: 2}
   m_CullingMode: 1
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 1
+  m_UpdateMode: 1
+  m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
@@ -976,7 +976,7 @@ MonoBehaviour:
   Vertical: Vertical
   Run: Fire1
   _Sound: 1
---- !u!114 &4435839585051676166
+--- !u!114 &6792224179556315018
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -985,13 +985,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 4435839585051676167}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c4183ecdd73f28b43a8cbc55c11aac1f, type: 3}
+  m_Script: {fileID: 11500000, guid: 72ccf650bf1632a4ca4041d66abe710f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jumpSpeed: 0
   gravity: 20
-  JumpButton: Jump
-  _anim: {fileID: 4435839585051676171}
 --- !u!1 &4435839585109500205
 GameObject:
   m_ObjectHideFlags: 0
