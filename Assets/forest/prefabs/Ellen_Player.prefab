@@ -156,6 +156,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ellen
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 717b81375fa2e1540a80271f3b040157, type: 3}
+      propertyPath: m_TagString
+      value: Follow
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 717b81375fa2e1540a80271f3b040157, type: 3}
 --- !u!4 &2647159920672647065 stripped
