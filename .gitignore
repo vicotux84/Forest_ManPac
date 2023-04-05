@@ -48,3 +48,8 @@ Logs/shadercompiler-UnityShaderCompiler.exe0.log
 Logs/shadercompiler-UnityShaderCompiler.exe1.log
 Logs/shadercompiler-UnityShaderCompiler.exe2.log
 Logs/shadercompiler-UnityShaderCompiler.exe3.log
+Logs/ApiUpdaterCheck.txt
+Logs/Packages-Update.log
+Logs/shadercompiler-UnityShaderCompiler.exe0.log
+*.txt
+*.log

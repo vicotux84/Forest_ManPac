@@ -6497,7 +6497,7 @@ MonoBehaviour:
   SFXvol: 0.1
   FXManager: {fileID: 0}
   Player: {fileID: 0}
-  Player1: {fileID: 6693729782323026590, guid: e7ca897a4140e894ba9e916d97a0a58c, type: 3}
+  Player1: {fileID: 1357371931035694579, guid: f8f3b8b1fbcc0b84fac476539166b31c, type: 3}
   Player2: {fileID: 8345170351648969581, guid: 7d9325353c7d4504fba3745192134521, type: 3}
   position: {x: -8.58, y: -1.57, z: 0}
   espera_Reespawn: 2.5
