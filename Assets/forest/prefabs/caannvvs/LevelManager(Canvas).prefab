@@ -1117,7 +1117,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ganastes: {fileID: 53588147490106656}
   waitTime: 2.5
-  NextLevel: MainMenu
+  NextLevel: 02
   MainMenu: MainMenu
   gamanager: {fileID: 0}
 --- !u!114 &53588146725738448

@@ -1703,7 +1703,7 @@ MonoBehaviour:
   CursorIsvisble: 1
   Horizontal: Horizontal
   Vertical: Vertical
-  Speed: 20
+  Speed: 15
 --- !u!114 &5344387303262471989
 MonoBehaviour:
   m_ObjectHideFlags: 0
