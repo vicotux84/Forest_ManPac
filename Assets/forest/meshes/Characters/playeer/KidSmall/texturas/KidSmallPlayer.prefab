@@ -1520,7 +1520,6 @@ GameObject:
   - component: {fileID: 5564271317969703539}
   - component: {fileID: 919132149500099328}
   - component: {fileID: 8371826896242629555}
-  - component: {fileID: 919132149500099327}
   m_Layer: 0
   m_Name: KidSmallPlayer
   m_TagString: Jugador
@@ -1706,22 +1705,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &919132149500099327
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6194645292342724984}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c4183ecdd73f28b43a8cbc55c11aac1f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  jumpSpeed: 0
-  gravity: 20
-  JumpButton: Jump
-  _anim: {fileID: 602410783651908024}
 --- !u!1 &6211489042287274531
 GameObject:
   m_ObjectHideFlags: 0

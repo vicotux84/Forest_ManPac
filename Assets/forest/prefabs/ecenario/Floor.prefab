@@ -61,7 +61,7 @@ MonoBehaviour:
   GameManager: {fileID: 0}
   Player: {fileID: 0}
   Destino: {x: 0.5, y: 0.7, z: 0}
-  waitTime: 3
+  waitTime: 1.5
   levelText: {fileID: 0}
 --- !u!1 &8575798806116565438
 GameObject:

@@ -11,27 +11,34 @@ public class DeadLimit : MonoBehaviour{
     public Vector3 Destino;
     public float waitTime=3;
     public Text levelText;
+    CharacterController controller;
 
     void Awake(){
-      if(GameManager==null){
-        GameManager=FindObjectOfType<GameManager>();
-        Player=GameObject.FindGameObjectWithTag(TagJugador); 
-        //
-        }
+      SearchPlayer();
       }
       void OnTriggerEnter(Collider other){
 		if (other.tag == TagJugador){
         GameManager.lives--;
+       Player.transform.position=Destino;
+        levelText.text="lives: 0" + GameManager.lives.ToString();
         Invoke("DeadL", waitTime);
-        levelText.text="lives: 0" + GameManager.lives.ToString();        
-        //Debug.Log(GameManager.lives);
-        Player.SetActive(false);
+        
+        
 
         }
     } 
     private void DeadL() {
-      levelText.text="";
       Player.transform.position=Destino;
-      Player.SetActive(true);
+      levelText.text="";      
+      
+    }
+    private void Update() {
+     SearchPlayer();
+    }
+    private void SearchPlayer() {
+      if(GameManager==null){
+        GameManager=FindObjectOfType<GameManager>();
+        }
+        Player=GameObject.FindGameObjectWithTag(TagJugador);
     }
   } 
