@@ -112,7 +112,7 @@ public class GameManager : MonoBehaviour{
         Time.timeScale =
         Time.timeScale == 0 ? 1: 0;
     }
-    void NextLive(){    
+    public void NextLive(){    
         Time.timeScale = 1;
          Player.transform.position=position;
          Player.SetActive(true);  

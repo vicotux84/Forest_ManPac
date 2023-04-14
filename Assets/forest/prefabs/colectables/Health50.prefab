@@ -89,7 +89,7 @@ Transform:
   m_GameObject: {fileID: 1045782045206655412}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0.757, z: 0.23}
-  m_LocalScale: {x: 0.85, y: 0.85, z: 0.85}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 5361371955251003417}
   - {fileID: 2332145906890816370}
@@ -121,7 +121,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3656fa62cbbd0f7459fda7548c4552aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotationY: 0
   Rotation: {x: 2, y: 2, z: 0}
 --- !u!114 &162750721831889801
 MonoBehaviour:
@@ -140,6 +139,7 @@ MonoBehaviour:
   ColiderCoin: {fileID: 162750721831889800}
   thisCoin: {fileID: 7747057128128891804}
   _Healt: {fileID: 8300000, guid: 8a0235686b483974fabf84d105f07475, type: 3}
+  _Sound: 3
 --- !u!1 &4873627501513500630
 GameObject:
   m_ObjectHideFlags: 0
@@ -245,7 +245,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &2332145906890816370
 Transform:

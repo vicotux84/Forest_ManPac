@@ -19,7 +19,6 @@ public class LevelManagerText: MonoBehaviour{
     }
 
    void Update(){
-       //ManagerUI.StartOtro();
        StartOtro();
       if ( gamanager.currentGameState==GameState.pause){
           ganastes.text="el juego esta pausado";  
@@ -28,9 +27,6 @@ public class LevelManagerText: MonoBehaviour{
     }
     void Start(){
         gamanager = FindObjectOfType<GameManager>();
-        //ganastes.text=" ";
-        //NextBola();
-        
     }
 #endregion
 
@@ -45,11 +41,7 @@ public void NextBola(){
     }
     public void ganaste(){
         ganastes.text="";
-         gamanager.GameOver(NextLevel);
-        /* if(NextLevel==MainMenu){
-        Destroy(gamanager.gameObject, 0f);
-         }*/
-        
+         gamanager.GameOver(NextLevel);  
     }
 
     public void StartOtro(){

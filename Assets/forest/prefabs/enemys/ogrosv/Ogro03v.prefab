@@ -29,9 +29,9 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 771657358802332778}
-  m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
+  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
   m_LocalPosition: {x: -18.66, y: -0.6000001, z: 12.049999}
-  m_LocalScale: {x: 1.5000007, y: 1.5, z: 1.5000007}
+  m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children:
   - {fileID: 8459271703724798216}
   m_Father: {fileID: 0}
@@ -98,7 +98,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TagPlayer: Jugador
-  Value: 20
+  Value: 25
   IsCoin: 0
   Orco: {fileID: 9092361270836325298}
   anim: {fileID: 6277602538300058794}
@@ -108,6 +108,7 @@ MonoBehaviour:
   _Coin: {fileID: 8300000, guid: 5493274fbce7e584bbcb35fe311e572b, type: 3}
   _Dead: {fileID: 8300000, guid: 0c1e922fba019324a95523906d1afc7a, type: 3}
   RB: {fileID: 5863921681481958578}
+  _Sound: 2
 --- !u!54 &5863921681481958578
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -133,7 +134,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 771657358802332778}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.5
+  m_Radius: 0.35
   m_Speed: 3.5
   m_Acceleration: 8
   avoidancePriority: 50
