@@ -2185,7 +2185,7 @@ Animator:
   m_GameObject: {fileID: 708777780763863875}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: 3ef9760ee10a77440a3f22baeeec4ac1, type: 3}
-  m_Controller: {fileID: 9100000, guid: 164dbd2a89a41874c87434648d0ae957, type: 2}
+  m_Controller: {fileID: 9100000, guid: b37494ab09556b3468fdabab2e074495, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -2220,9 +2220,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a08686a6827d944196f40f405ec06f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _Agent: {fileID: 708777780763863874}
-  MinDist: {fileID: 0}
-  moveTo: {x: 0, y: 0, z: 0}
+  TagJugador: Jugador
+  Destino: {fileID: 0}
 --- !u!114 &708777780763863872
 MonoBehaviour:
   m_ObjectHideFlags: 0
