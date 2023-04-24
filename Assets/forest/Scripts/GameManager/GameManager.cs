@@ -162,10 +162,10 @@ public class GameManager : MonoBehaviour{
         
     void Singleton(){
         if (gameManager!=null){
-    Destroy(this.gameObject);      
+    Destroy(this);      
     }else{ 
         gameManager=this;
-    DontDestroyOnLoad(this.gameObject);
+    DontDestroyOnLoad(this);
     }
 }
 #endregion    

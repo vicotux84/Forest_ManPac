@@ -9,6 +9,8 @@ TagManager:
   - Follow
   - ForestGuard
   - cz
+  - espada
+  - Zomby
   layers:
   - Default
   - TransparentFX

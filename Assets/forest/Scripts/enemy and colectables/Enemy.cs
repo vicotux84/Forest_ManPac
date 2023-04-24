@@ -48,7 +48,15 @@ public class Enemy : MonoBehaviour{
       GameManager.Hearts-=Value;
       GameManager.Points-=(Value/2);
       if (IsCoin==true&& IsDead==false){
-        IsCoin=false;
+        Is_dead();
+        }
+      }
+       if(other.tag == "espada"){
+         Is_dead();
+        }       
+  } 
+   private void Is_dead() {
+            IsCoin=false;
         IsDead=true;
         FXManager.SoundPlay(_Dead, _Sound);
         GameManager.Points+=Value;
@@ -57,12 +65,9 @@ public class Enemy : MonoBehaviour{
         ColiderEnemy.radius=0.1f;
         ColiderEnemy.height=0.1f;
         transform.position=new Vector3(transform.position.x,0,transform.position.z);
-         //RB.useGravity = true;         
+         RB.useGravity = true;         
          ScriptIA.enabled=false;
-         Orco.SetActive(false);
-         
+         //Orco.SetActive(false);         
          Value=0;
         }
-      }
-  } 
 }

@@ -29,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 6693729782323026590}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -18.65, y: 5.405, z: 12.07}
-  m_LocalScale: {x: 2.4, y: 2.4, z: 2.4}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2647159920672647065}
   m_Father: {fileID: 0}
@@ -65,13 +65,13 @@ CharacterController:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Height: 1.6
-  m_Radius: 0.3
+  m_Height: 3.39
+  m_Radius: 0.52
   m_SlopeLimit: 45
   m_StepOffset: 0.3
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.1
-  m_Center: {x: 0.01, y: 0.8, z: 0}
+  m_Center: {x: 0.01, y: 1.58, z: 0}
 --- !u!114 &8837432549604468768
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -100,7 +100,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72ccf650bf1632a4ca4041d66abe710f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gravity: 8
+  gravity: 13
 --- !u!1001 &2537251248586178674
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -160,7 +160,8 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Follow
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5866666021909216657, guid: 717b81375fa2e1540a80271f3b040157, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 717b81375fa2e1540a80271f3b040157, type: 3}
 --- !u!4 &2647159920672647065 stripped
 Transform:

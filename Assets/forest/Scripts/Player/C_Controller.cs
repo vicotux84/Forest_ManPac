@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class C_Controller : MonoBehaviour{
     private Vector3 moveDirection = Vector3.zero;
-   [SerializeField]bool CursorIsvisble=false;
+   [SerializeField]bool CursorIsvisble=false,Attake;
     [SerializeField]string Horizontal, Vertical;
     public float Speed;
     private  CharacterController _controller;
@@ -18,8 +18,10 @@ public class C_Controller : MonoBehaviour{
     void Update(){
         Axis_Horizontal=Input.GetAxis(Horizontal);
         Axis_Vertical=Input.GetAxis(Vertical);
+        Attake=Input.GetButton("Fire1");
         _move=new Vector3(Axis_Vertical,0,Axis_Horizontal);
         Cursor.visible = CursorIsvisble;
+        Atake();
         Rotate(_move);
         Movement(_move);       
     } 
@@ -36,11 +38,18 @@ public class C_Controller : MonoBehaviour{
              _anim.SetFloat("Speed",1.0f);             
         }if (Axis_Vertical==0){                 
              _anim.SetFloat("Speed",0.0f);             
-        }if (Axis_Vertical<=-1f){                 
+        }if (Axis_Vertical<=-0.1f){                 
              _anim.SetFloat("Speed",1.0f);             
         }
         
     
+    } 
+    private void Atake() {
+        if (Attake==true){             
+        _anim.SetBool("Ataque",true);
+        }else{             
+        _anim.SetBool("Ataque",false);
+        }
     } 
       
 

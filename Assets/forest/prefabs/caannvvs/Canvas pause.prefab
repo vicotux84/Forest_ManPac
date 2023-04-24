@@ -944,7 +944,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: Use Shadows
+  m_Text: Fps counter
 --- !u!114 &194181660768672267
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1204,9 +1204,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: UnityEngine.Rendering.Universal.UniversalAdditionalCameraData,
-          Unity.RenderPipelines.Universal.Runtime
-        m_MethodName: set_renderPostProcessing
+        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+        m_MethodName: set_enabled
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1216,7 +1215,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 1
-  m_IsOn: 1
+  m_IsOn: 0
 --- !u!1 &194181660802676782
 GameObject:
   m_ObjectHideFlags: 0
@@ -1583,9 +1582,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: UnityEngine.Rendering.Universal.UniversalAdditionalCameraData,
-          Unity.RenderPipelines.Universal.Runtime
-        m_MethodName: set_renderShadows
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5268,7 +5266,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 25
   m_SortingLayerID: 0
-  m_SortingOrder: 5
+  m_SortingOrder: 8
   m_TargetDisplay: 0
 --- !u!114 &194181662093415034
 MonoBehaviour:
