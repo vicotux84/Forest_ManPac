@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ChangeEnemy : MonoBehaviour{
     [SerializeField] string TagPlayer="Jugador";
@@ -10,6 +11,7 @@ public class ChangeEnemy : MonoBehaviour{
     [SerializeField] float waitTime;
     [SerializeField]int _Sound;
     [SerializeField] AudioClip _EnemyChange;
+    [SerializeField]Text TextCargar;
     
     GameManager GameManager;
     SoundFXManagerv FXManager;
@@ -38,7 +40,9 @@ public class ChangeEnemy : MonoBehaviour{
 
         }    
       IEnumerator VidaEnemy(){
+        TextCargar.text="Tu turno de atacar!";
       yield return new WaitForSeconds(waitTime);
+      TextCargar.text="";
       GameManager.IsCoin=false;
       capsuleCollider.enabled=false;
       Debug.Log("tiempo acabado");
