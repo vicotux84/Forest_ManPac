@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 1
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 2100000, guid: e042e3a075d43734cb2151822f3efb89, type: 2}
+  m_SkyboxMaterial: {fileID: 2100000, guid: cf09bdd74268f184498d51e302193dbf, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -97,8 +97,8 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 112000000, guid: a27d0c0eec58cb742b624bb596219767, type: 2}
-  m_LightingSettings: {fileID: 4890085278179872738, guid: fa20cf77c1520d24aab59faafbd3de0d, type: 2}
+  m_LightingDataAsset: {fileID: 112000000, guid: 4cd280b35d7ce244b9f5ec90a66d32da, type: 2}
+  m_LightingSettings: {fileID: 4890085278179872738, guid: 16a2f392be3a62848b83af67fbfa8a20, type: 2}
 --- !u!196 &5
 NavMeshSettings:
   serializedVersion: 2
@@ -2678,7 +2678,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!108 &434875598
 Light:
   m_ObjectHideFlags: 0
@@ -2691,13 +2691,13 @@ Light:
   m_Type: 1
   m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 1.5
+  m_Intensity: 1
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 1
+    m_Type: 2
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1
@@ -2748,13 +2748,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 434875597}
-  m_LocalRotation: {x: 0.736839, y: -0.107258715, z: 0.27793768, w: 0.60688925}
+  m_LocalRotation: {x: 0.27001807, y: -0.37349766, z: -0.19731662, w: 0.8652491}
   m_LocalPosition: {x: 7.8302307, y: 1.9189867, z: -12.965387}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1870482781}
   m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 107.449005, y: -68.711, z: -36.72}
+  m_LocalEulerAnglesHint: {x: 161.345, y: 127.378, z: 145.021}
 --- !u!1 &437398913
 GameObject:
   m_ObjectHideFlags: 0
@@ -5621,7 +5621,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d3f749976c088a4a8a73772e8a572bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Blur: 0
+  Blur: 1
   BlurAmount: 0.19
   BlurMask: {fileID: 0}
   Bloom: 1
@@ -5632,25 +5632,25 @@ MonoBehaviour:
   BloomSoftness: 0
   LUT: 1
   LutAmount: 1
-  SourceLut: {fileID: 2800000, guid: 29e479c8a204e604c87d96b157d1cca5, type: 3}
+  SourceLut: {fileID: 2800000, guid: 51824829ab667cc458f74bf5cc3ddb27, type: 3}
   ImageFiltering: 1
   Color: {r: 1, g: 1, b: 1, a: 1}
-  Contrast: 0
-  Brightness: 0.06
-  Saturation: 0.19
-  Exposure: 0.19
+  Contrast: 0.04
+  Brightness: -0.07
+  Saturation: 0.32
+  Exposure: 0
   Gamma: 0
   Sharpness: 0
-  ChromaticAberration: 1
+  ChromaticAberration: 0
   Offset: 0.15
   FishEyeDistortion: 0.23
   GlitchAmount: 0
-  Distortion: 1
+  Distortion: 0
   LensDistortion: 0.11
   Vignette: 0
   VignetteColor: {r: 0, g: 0, b: 0, a: 1}
-  VignetteAmount: 0
-  VignetteSoftness: 0.0001
+  VignetteAmount: 0.06
+  VignetteSoftness: 0.7
   material: {fileID: 2100000, guid: 3aeedadbfc1ffb644834cb2b7d57aa77, type: 2}
 --- !u!114 &1054875082
 MonoBehaviour:
@@ -7723,6 +7723,10 @@ PrefabInstance:
       propertyPath: colectable
       value: 
       objectReference: {fileID: 1216383378}
+    - target: {fileID: 7877123376402506426, guid: 5cfcf6954ae32c9478ab9c2e947d2ca0, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7877123376855383041, guid: 5cfcf6954ae32c9478ab9c2e947d2ca0, type: 3}
       propertyPath: m_Name
       value: forest_Guard_player (C. Controller)
@@ -10874,6 +10878,10 @@ PrefabInstance:
     - target: {fileID: 194181662093415013, guid: adcfebf3fd02dbe4a89b98837fb9c548, type: 3}
       propertyPath: m_Name
       value: Canvas pause
+      objectReference: {fileID: 0}
+    - target: {fileID: 194181662093415013, guid: adcfebf3fd02dbe4a89b98837fb9c548, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 194181662093415014, guid: adcfebf3fd02dbe4a89b98837fb9c548, type: 3}
       propertyPath: m_Pivot.x

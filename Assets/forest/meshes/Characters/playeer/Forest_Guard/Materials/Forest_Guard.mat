@@ -21,8 +21,8 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Forest_Guard
-  m_Shader: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
-  m_ShaderKeywords: _NORMALMAP
+  m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
+  m_ShaderKeywords: _NORMALMAP _SMOOTHNESS_TEXTURE_ALBEDO_CHANNEL_A
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -182,7 +182,7 @@ Material:
     - _Blend: 0
     - _BlurLevelMatcap: 0
     - _BlurLevelSGM: 0
-    - _BumpScale: 2
+    - _BumpScale: 0.5
     - _BumpScaleMatcap: 1
     - _CameraRolling_Stabilizer: 0
     - _ClearCoatMask: 0
@@ -200,7 +200,7 @@ Material:
     - _EnvironmentReflections: 1
     - _Farthest_Distance: 100
     - _GI_Intensity: 0
-    - _GlossMapScale: 1
+    - _GlossMapScale: 0.19
     - _Glossiness: 0
     - _GlossinessSource: 0
     - _GlossyReflections: 1
@@ -240,7 +240,7 @@ Material:
     - _Is_ViewShift: 0
     - _LightDirection_MaskOn: 0
     - _MatCap: 0
-    - _Metallic: 0
+    - _Metallic: 0.71
     - _Mode: 0
     - _Nearest_Distance: 0.5
     - _OUTLINE: 1
@@ -270,7 +270,7 @@ Material:
     - _Shininess: 0
     - _Smoothness: 0.48
     - _SmoothnessSource: 0
-    - _SmoothnessTextureChannel: 0
+    - _SmoothnessTextureChannel: 1
     - _SpecSource: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
