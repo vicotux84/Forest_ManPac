@@ -9497,7 +9497,7 @@ MonoBehaviour:
   BloomSoftness: 0
   LUT: 1
   LutAmount: 1
-  SourceLut: {fileID: 2800000, guid: 51824829ab667cc458f74bf5cc3ddb27, type: 3}
+  SourceLut: {fileID: 2800000, guid: 1d60ec85964e6a746a2f7621a56bb44d, type: 3}
   ImageFiltering: 1
   Color: {r: 1, g: 1, b: 1, a: 1}
   Contrast: 0.04
@@ -9506,11 +9506,11 @@ MonoBehaviour:
   Exposure: 0
   Gamma: 0
   Sharpness: 0
-  ChromaticAberration: 0
+  ChromaticAberration: 1
   Offset: 0.15
   FishEyeDistortion: 0.23
   GlitchAmount: 0
-  Distortion: 0
+  Distortion: 1
   LensDistortion: 0.11
   Vignette: 0
   VignetteColor: {r: 0, g: 0, b: 0, a: 1}
