@@ -6,6 +6,7 @@ public class CameraChange : MonoBehaviour{
 
     [SerializeField]bool CursorIsvisble=false;
     [SerializeField]Camera Fps,Tps;
+	[SerializeField]string ButtonFPS, ButtonTPS;
     
     void Start(){
     Cursor.visible = CursorIsvisble;        
@@ -22,9 +23,9 @@ public class CameraChange : MonoBehaviour{
     // Update is called once per frame
     void Update(){
     Cursor.visible = CursorIsvisble;
-    if (Input.GetButton("Fps"))  {
+    if (Input.GetButton(ButtonFPS))  {
         Fpc();
-    }if (Input.GetButton("Tps"))  {
+    }if (Input.GetButton(ButtonTPS))  {
         Tpc();
     }
 }

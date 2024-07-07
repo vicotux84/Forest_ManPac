@@ -74,7 +74,7 @@ public class GameManager : MonoBehaviour{
     }
     public void GameOver(string SceneToLoad){
         currentGameState=GameState.gameOver;
-        Time.timeScale = 0;     
+        //Time.timeScale = 0;     
         
 	   SceneManager.LoadScene (SceneToLoad);
        if(SceneToLoad=="MainMenu"){
@@ -125,6 +125,7 @@ public class GameManager : MonoBehaviour{
     }
     void HeartsCount(){
         if(Hearts<=0){
+			Debug.Log("has muerto");
             FXManager.SoundPlay(Dead, 3);
             Player.SetActive(false);            
             lives--;

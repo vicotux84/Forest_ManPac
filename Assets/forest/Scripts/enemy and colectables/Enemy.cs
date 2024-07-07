@@ -44,11 +44,15 @@ public class Enemy : MonoBehaviour{
     
     void OnTriggerEnter(Collider other){
 		if (other.tag == TagPlayer){
+			if(IsCoin==false){
+	  Debug.Log("Daño: "+Value); 
       FXManager.SoundPlay(_Coin, _Sound);
       GameManager.Hearts-=Value;
       GameManager.Points-=(Value/2);
+	   }
       if (IsCoin==true&& IsDead==false){
         Is_dead();
+		//GameManager.Points=(Value);
         }
       }
        if(other.tag == "espada"){
@@ -60,13 +64,15 @@ public class Enemy : MonoBehaviour{
         IsDead=true;
         FXManager.SoundPlay(_Dead, _Sound);
         GameManager.Points+=Value;
-         anim.SetBool("Dead",true);
+		ScriptIA.isDead();
+         //anim.SetBool("Dead",true);
         ColiderEnemy.isTrigger = false;
         ColiderEnemy.radius=0.1f;
         ColiderEnemy.height=0.1f;
-        transform.position=new Vector3(transform.position.x,0,transform.position.z);
+		ScriptIA.enabled=false;
+        //transform.position=new Vector3(transform.position.x,-2.0f,transform.position.z);
          RB.useGravity = true;         
-         ScriptIA.enabled=false;
+         //ScriptIA.enabled=false;
          //Orco.SetActive(false);         
          Value=0;
         }

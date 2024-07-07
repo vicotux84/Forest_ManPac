@@ -23,8 +23,8 @@ public class C_Controller : MonoBehaviour{
         _controller=GetComponent<CharacterController>();
     }
     void Update(){
-        Axis_Horizontal=Input.GetAxis(Horizontal);
-        Axis_Vertical=Input.GetAxis(Vertical);
+        Axis_Horizontal-=Input.GetAxis(Horizontal);
+        Axis_Vertical-=Input.GetAxis(Vertical);
         Attake=Input.GetButton("Fire1");
         _move=new Vector3(Axis_Vertical,0,Axis_Horizontal);
         Cursor.visible = CursorIsvisble;

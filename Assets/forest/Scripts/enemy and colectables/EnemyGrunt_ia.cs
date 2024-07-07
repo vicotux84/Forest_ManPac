@@ -20,6 +20,7 @@ public class EnemyGrunt_ia : MonoBehaviour{
     void Awake() {
         mover();
         _Agent=GetComponent<NavMeshAgent>();
+		_Agent.enabled=true;
         anim=GetComponent<Animator>();
     }
 
@@ -40,7 +41,10 @@ public class EnemyGrunt_ia : MonoBehaviour{
     void mover(){
     moveTo=Destino.position;
     }
-    
+    public void isDead(){
+    _Agent.enabled=false;
+	anim.SetBool("Dead",true);
+    }
      
 
 }

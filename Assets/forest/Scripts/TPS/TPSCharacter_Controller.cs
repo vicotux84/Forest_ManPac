@@ -16,7 +16,7 @@ public class TPSCharacter_Controller : MonoBehaviour {
         float _InputX=Input.GetAxis(Horizontal);
         bool IsWalk;
         velocity.z =_InputZ * walkSpeed;
-        velocity.x =_InputX* strafeSpeed;
+        velocity.x =-_InputX* strafeSpeed;
         velocity = transform.TransformDirection(velocity);
         velocity.y += Physics.gravity.y * Time.deltaTime;
         controller.Move(velocity * Time.deltaTime);
