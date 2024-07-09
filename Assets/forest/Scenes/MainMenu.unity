@@ -295,7 +295,7 @@ RectTransform:
   m_GameObject: {fileID: 474674938}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.39999998, y: 0.39999998, z: 1}
+  m_LocalScale: {x: 0.39999995, y: 0.39999995, z: 1}
   m_Children: []
   m_Father: {fileID: 1217992573}
   m_RootOrder: 3
@@ -579,11 +579,11 @@ RectTransform:
   m_Father: {fileID: 1217992573}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -419.04318, y: -55.887123}
-  m_SizeDelta: {x: 345.9113, y: 450.6042}
-  m_Pivot: {x: 0.54188764, y: 0.4999999}
+  m_AnchorMin: {x: 0, y: 0.5}
+  m_AnchorMax: {x: 0, y: 0.5}
+  m_AnchoredPosition: {x: 50, y: 0}
+  m_SizeDelta: {x: 300, y: 500}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &705592434
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -838,10 +838,10 @@ RectTransform:
   m_Father: {fileID: 1217992573}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 429, y: 0}
-  m_SizeDelta: {x: 343.4514, y: 583.4516}
+  m_AnchorMin: {x: 1, y: 0.5}
+  m_AnchorMax: {x: 1, y: 0.5}
+  m_AnchoredPosition: {x: -50, y: 0}
+  m_SizeDelta: {x: 200, y: 500}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1090021742
 MonoBehaviour:
@@ -999,7 +999,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 100, y: 100}
+  m_SizeDelta: {x: 700, y: 700}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1360383590
 GameObject:
@@ -1127,7 +1127,7 @@ GameObject:
   - component: {fileID: 1396941717}
   - component: {fileID: 1396941716}
   m_Layer: 5
-  m_Name: Button_Clasic
+  m_Name: Button_TPS
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1205,7 +1205,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 01
+          m_StringArgument: 00
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1396941714
@@ -1295,7 +1295,7 @@ GameObject:
   - component: {fileID: 1576948748}
   - component: {fileID: 1576948747}
   m_Layer: 5
-  m_Name: Button_TPS
+  m_Name: Button_Clasic
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1373,7 +1373,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 02
+          m_StringArgument: 01
           m_BoolArgument: 0
         m_CallState: 1
 --- !u!114 &1576948745
@@ -1922,7 +1922,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1988642652}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -1997,7 +1997,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 0.5.8.01
+  m_Text: 0.5.8.02
 --- !u!222 &1988642657
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2017,6 +2017,7 @@ GameObject:
   - component: {fileID: 2117386258}
   - component: {fileID: 2117386257}
   - component: {fileID: 2117386256}
+  - component: {fileID: 2117386259}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -2089,6 +2090,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2117386259
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2117386255}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8f499d8a208230428fa64667c79539e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!224 &425512948801575306
 RectTransform:
   m_ObjectHideFlags: 0
